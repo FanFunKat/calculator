@@ -1,0 +1,158 @@
+* {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 24pt;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #3b2853, #723363, #a74064, #d15a58);
+}
+
+.calculator {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.25% 1.25% 0.25% 1.25%;
+}
+
+.display {
+    /* height: 110px; */
+    padding: 10px 20px;
+    background: #051937;
+    color: white;
+}
+
+.display-1 {
+    height: 20px;
+    text-align: right;
+    font-weight: 1.300;
+    font-size: 75%;
+    opacity: .4;
+}
+
+.display-2 {
+    height: 50px;
+    text-align: right;
+    font-weight: 1.300;
+    font-size: 180%;
+}
+
+.temp-result {
+    height: 20px;
+    text-align: left;
+    font-weight: 1.300;
+    font-size: 75%;
+    opacity: .4;
+}
+
+
+/* button area */
+.all-buttons {
+    height: 400px;
+    margin: 1.25% 0 0 0;
+    justify-content: center;
+    align-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    grid-template-rows: repeat(5, 19%);
+    grid-gap: 1%;
+    grid-template-areas: 
+    'all-clear last-entity-clear percent divide'
+    'seven eight nine multi'
+    'four five six minus'
+    'one two three plus'
+    'zero zero decimal equal';
+    box-sizing: border-box;
+}
+
+.button {
+    color: #3c3c3b;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.55rem 1rem 1rem 1rem;
+}
+
+/* assignment elements to grid template area */
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.all-clear {
+    grid-area: all-clear;
+}
+
+.last-entity-clear {
+    grid-area: last-entity-clear;
+}
+
+.percent {
+    grid-area: percent;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.multi {
+    grid-area: multi;
+}
+
+
+.decimal {
+    grid-area: decimal;
+}
+
+.equal {
+    grid-area: equal;
+    color:white;
+    background: #D15A58;
+}
+
