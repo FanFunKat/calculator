@@ -16,6 +16,9 @@ body {
     width: 400px;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 1.25% 1.25% 0.25% 1.25%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.3);
 }
 
 .display {
@@ -23,6 +26,7 @@ body {
     padding: 10px 20px;
     background: #051937;
     color: white;
+    border-radius: 10px;
 }
 
 .display-1 {
@@ -73,8 +77,19 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     box-sizing: border-box;
+    border-radius: 10px;
     padding: 0.55rem 1rem 1rem 1rem;
 }
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+}
+
 
 /* assignment elements to grid template area */
 .one {
@@ -153,6 +168,6 @@ body {
 .equal {
     grid-area: equal;
     color:white;
-    background: #D15A58;
+    background-color: #a74064;
 }
 
